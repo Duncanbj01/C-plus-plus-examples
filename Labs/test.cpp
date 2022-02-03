@@ -1,14 +1,40 @@
 #include <iostream>
-#include <cmath>
-#include "Rectangle.h"
+#include "Circle.h"
 using namespace std; 
 
 int main()
 {
-	Rectangle A(15.7, 10.0, 'A'); 
-	Rectangle B(5.0, 100.0, 'B'); 
-	Rectangle C(30.1, 5.2, 'C'); 
-	Rectangle D(20.5, 5.6, 'D'); 
+	circle A(5, 7, 10, 'A');  
+	cout << endl; 
 
-	cout << "Area of Rectangle A = " <<  A.get_area() << endl;
+	circle B(18,17,24,'B');
+	cout << endl;
+
+	circle C(25,30,5,'C');
+	cout << endl;
+
+	cout << "**********" << endl; 
+
+	A.compare(&B); 
+	cout << endl;
+
+	C.compare(&A); 
+	cout << endl;
+
+	cout << "**********" << endl;
+
+	cout << "A and B intersect? "; 
+	cout << A.intersects(B); 
+	cout << endl;
+
+	cout << "A and C intersect? "; 
+	cout << A.intersects(C);
+	cout << endl;
+
+	cout << "**********" << endl;
+
+	cout << "Number of circles created = " << circle::numberOfCircles() << endl; 
+	cout << "**********" << endl;
+	return 0; 
 }
+
