@@ -5,8 +5,16 @@ using namespace std;
 // Write StringStuff class and all its methods here. You can also use a separate .h file if you want, but make sure to include it above.
 
 class StringStuff {
-	static void tokenize(string& str, string& delim) {
-		for (int i = 0; i < str.length(); i++)
+public: 
+	static void tokenize(string& str) {
+		string space = ""; 
+		for (int i = 0; i < str.length(); i++) {
+			char s = str.at(i); 
+			int index = space.find(s); 
+			if (index >= 0 && index < space.length())
+				cout << str.substr(i, i) << endl; 
+		} 
+	}
 			
 				
 	
