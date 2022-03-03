@@ -1,0 +1,16 @@
+15
+AAA
+aaa
+aac
+ABC
+abc
+AbC
+abcdx
+abcx
+abcxy
+wxCdx
+WXcdX
+wxcDX
+XYZab
+xyzw
+xYZw
