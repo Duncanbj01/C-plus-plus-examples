@@ -53,7 +53,7 @@ private:
 		count = 0; 
 
 		// col check
-		for (int i = 0; i < c; i++)
+		for (int i = 0; i < dim; i++)
 		{
 			if (M[i][c] == turn)
 			{
@@ -65,7 +65,7 @@ private:
 		count = 0;
 
 		// digonal check
-		for (int i = 0; i < r; i++)
+		for (int i = 0; i < dim; i++)
 		{
 			if (M[i][i] == turn)
 			{
@@ -129,7 +129,7 @@ public:
 
 			if (choiceSequence[i] < 0 || choiceSequence[i] > dim * dim - 1)
 			{
-				cout << "Invalid choice! Must choose a number between 0 to " << dim * dim - 1;
+				cout << "Invalid choice! Must choose a number between 0 to " << dim * dim - 1 << endl;
 				continue;
 			}
 			else
@@ -139,7 +139,7 @@ public:
 
 			if (M[choiceSequence[i] / dim][choiceSequence[i] % dim] != '\0')
 			{
-				cout << "This spot is already taken, try again.";
+				cout << "This spot is already taken, try again." << endl;
 				continue;
 			}
 
@@ -150,7 +150,7 @@ public:
 			if (checkWin(choiceSequence[i] / dim, choiceSequence[i] % dim) == true)
 			{
 				cout << turn << " has won the game!";
-				break;
+				return;
 			}
 			else
 				turn;
