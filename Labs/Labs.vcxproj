@@ -19,10 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab6.cpp" />
+    <Text Include="3by3_XWins2.txt" />
+    <Text Include="jagged.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="jagged.txt" />
+    <ClCompile Include="tictac.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tictactoe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -15,11 +15,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab6.cpp">
+    <Text Include="jagged.txt" />
+    <Text Include="3by3_XWins2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tictac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="jagged.txt" />
+    <ClInclude Include="tictactoe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
