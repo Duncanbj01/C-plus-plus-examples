@@ -29,7 +29,7 @@ public:
 	static int sumPosIntegersDivK(int n, int k)
 	{
 		if ((n/k) > 0)
-			return K *(n/k); 
+			return k * (n/k); 
 		if (n == k)
 			return k; 
 		if (n % k == 0)
