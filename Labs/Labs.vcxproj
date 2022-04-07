@@ -19,14 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="3by3_XWins2.txt" />
-    <Text Include="jagged.txt" />
+    <ClCompile Include="Lab10.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tictac.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="tictactoe.h" />
+    <None Include="employee.csv" />
+    <None Include="error.csv" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
