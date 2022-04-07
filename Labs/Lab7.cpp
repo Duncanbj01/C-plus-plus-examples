@@ -23,7 +23,7 @@ public:
 		int temp = 0 ; 
 		if (n % 2 == 0)
 			return temp += n % 10; 
-		return temp + sumEvenDigits(% 10); 
+		return temp + sumEvenDigits(n % 10); 
 	}
 
 	static int sumPosIntegersDivK(int n, int k)
@@ -37,6 +37,7 @@ public:
 		else 
 			return sumPosIntegersDivK(n - n % k);
 	}
+	
 };
 static string toString(int* arr, int len) {
 	string output = "[";
