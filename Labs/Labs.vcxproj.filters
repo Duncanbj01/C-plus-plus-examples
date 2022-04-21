@@ -15,12 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab10.cpp">
+    <ClCompile Include="PA9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="employee.csv" />
-    <None Include="error.csv" />
   </ItemGroup>
 </Project>
